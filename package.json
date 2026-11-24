@@ -1,0 +1,49 @@
+{
+  "name": "typing-desktop-pet-open",
+  "version": "0.1.29",
+  "description": "离线小黑桌宠，跟随键盘与鼠标动作。",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "app/main.cjs",
+  "author": "Typing Desktop Pet",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --test test/*.test.cjs",
+    "dist:win": "electron-builder --win portable --x64 --publish never"
+  },
+  "dependencies": {
+    "uiohook-napi": "1.5.5"
+  },
+  "devDependencies": {
+    "electron": "45.4.1",
+    "electron-builder": "26.18.1"
+  },
+  "build": {
+    "appId": "local.typingdesktop.pet.open",
+    "productName": "超有爱桌宠社区版",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "app/**/*",
+      "LICENSE",
+      "NOTICE.txt",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "node_modules/uiohook-napi/prebuilds/**/*"
+    ],
+    "npmRebuild": false,
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": true,
+      "signtoolOptions": { "signingHashAlgorithms": ["sha256"] },
+      "artifactName": "超有爱桌宠-社区版-${version}-${arch}.${ext}"
+    }
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

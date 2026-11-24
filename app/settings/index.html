@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'">
+  <title>超有爱桌宠社区版 · 设置</title>
+  <link rel="stylesheet" href="settings.css">
+  <script defer src="settings.js"></script>
+</head>
+<body>
+<main>
+  <header><div><p class="edition">超有爱桌宠 · 社区版</p><h1>桌宠设置</h1></div><span id="input-status" role="status"></span></header>
+  <aside class="showcase" aria-labelledby="full-title">
+    <h2 id="full-title">完整版的小猫衣橱</h2>
+    <p>在完整版里，可以分别挑选猫咪、键盘和鼠标，把喜欢的组合存成主题。</p>
+    <div class="looks">
+      <figure><img src="../assets/gallery/orange-brass.png" width="658" height="577" alt="橘猫伸出双爪，敲着奶油色圆键帽"><figcaption>橘猫<small>黄铜打字机</small></figcaption></figure>
+      <figure><img src="../assets/gallery/calico-jade.png" width="654" height="602" alt="三花猫坐在青瓷绿键盘前，一只爪子搭着鼠标"><figcaption>三花猫<small>青瓷豆豆</small></figcaption></figure>
+      <figure><img src="../assets/gallery/blue-circuit.png" width="660" height="618" alt="蓝灰猫坐在带青色点缀的深色键盘后"><figcaption>蓝灰猫<small>夜行霓虹</small></figcaption></figure>
+    </div>
+    <div class="showcase-footer">
+      <p>给鼠标挂上绳系网球，看小猫挥爪拍球。<br>登录账号，还能跨电脑同步主题和设置。</p>
+      <a id="website" href="https://pet.dycya.com/" title="在默认浏览器中打开完整版官网">探索完整版 <span>pet.dycya.com ↗</span></a>
+    </div>
+  </aside>
+  <p id="message" role="alert" hidden></p>
+  <form id="preferences">
+    <section><h2>桌面显示</h2>
+      <label>显示桌宠<input name="visible" type="checkbox" role="switch"></label>
+      <label>窗口置顶<input name="alwaysOnTop" type="checkbox" role="switch"></label>
+      <label>停靠位置<select name="corner"><option value="top-left">左上角</option><option value="top-right">右上角</option><option value="bottom-left">左下角</option><option value="bottom-right">右下角</option><option value="custom" disabled>自定义位置</option></select></label>
+      <label>桌宠大小<span class="size"><output id="size-label" for="size"></output><input id="size" type="range" min="220" max="570" name="size"></span></label>
+    </section>
+    <section><h2>键鼠与休息</h2>
+      <label>键鼠联动<input name="inputEnabled" type="checkbox" role="switch"></label>
+      <button id="permission" type="button" hidden>授予辅助功能权限</button>
+      <label>左手使用鼠标<input name="leftHanded" type="checkbox" role="switch"></label>
+      <label><span>隐私模式<small>只显示左右爪动作，暂停打字统计。</small></span><input name="privacyMode" type="checkbox" role="switch"></label>
+      <label>空闲后入睡<span><input name="sleepSeconds" type="number" required min="10" max="7200" step="1"> 秒</span></label>
+    </section>
+    <section><h2>打字统计</h2>
+      <label>显示每分钟打字速度<input name="showTypingSpeed" type="checkbox" role="switch"></label>
+      <label>显示今日累计字数<input name="showTypingTotal" type="checkbox" role="switch"></label>
+    </section>
+  </form>
+</main>
+</body></html>

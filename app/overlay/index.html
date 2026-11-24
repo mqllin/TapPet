@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'none';">
+<link rel="stylesheet" href="overlay.css">
+<link rel="stylesheet" href="chip.css">
+<title>超有爱桌宠社区版</title>
+</head>
+<body>
+<div id="pet" aria-label="超有爱桌宠社区版"></div>
+<img id="fallback" src="../assets/default-preview.png" alt="小黑" hidden>
+<div id="pet-cards">
+<div id="typing-stats" role="group" aria-label="打字统计" hidden>
+  <span id="typing-speed">平均速度 <strong id="typing-speed-value"></strong> 字/分</span>
+  <span id="typing-total">今日累计 <strong id="typing-total-value"></strong> 字</span>
+</div>
+</div>
+<div id="scale-editor" hidden>
+  <button class="resize-handle" type="button" data-corner="nw" aria-label="拖动左上角调整大小"></button>
+  <button class="resize-handle" type="button" data-corner="ne" aria-label="拖动右上角调整大小"></button>
+  <button class="resize-handle" type="button" data-corner="sw" aria-label="拖动左下角调整大小"></button>
+  <button class="resize-handle" type="button" data-corner="se" aria-label="拖动右下角调整大小"></button>
+  <div class="scale-toolbar" role="toolbar" aria-label="编辑桌宠位置与大小">
+    <span>拖动框内移动</span>
+    <button type="button" data-step="-20" aria-label="缩小">−</button>
+    <output id="pet-size"></output>
+    <button type="button" data-step="20" aria-label="放大">＋</button>
+    <button id="finish-scale" type="button">完成</button>
+  </div>
+</div>
+<script src="../vendor/three.min.js"></script>
+<script src="../vendor/GLTFLoader.js"></script>
+<script src="../keyboard-layout.js"></script>
+<script src="../keyboard-hands.js"></script>
+<script src="sleep-cycle.js"></script>
+<script src="cat-animation.js"></script>
+<script src="scene.js"></script>
+<script src="overlay.js"></script>
+</body>
+</html>
