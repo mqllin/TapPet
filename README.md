@@ -8,11 +8,22 @@
 
 ## 把小黑放到桌上
 
-1. 打开上方下载页，选择 `.zip` 文件，右键选择「全部解压缩」。
+1. 打开上方下载页，在 **Assets（发布附件）** 中下载文件名以 `cya-desktop-pet-community-` 开头、以 `-windows-x64.zip` 结尾的便携包。下载后右键选择「全部解压缩」。
 2. 双击解压出的桌宠 EXE。打开记事本敲几个字，看看小黑跟不跟得上。
 3. 右键小黑或托盘图标进入「桌宠设置」。想挪个位置，选择「编辑位置与大小」，拖动到喜欢的角落即可。
 
 Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP 的 SHA-256，包内的《证书报错说明》解释了这个提示。
+
+### 让豆包等 AI 帮你下载
+
+复制下面这段话发给 AI：
+
+```text
+请帮我下载「超有爱桌宠 · 社区版」的 Windows x64 便携包。
+打开官方最新发布页 https://github.com/mqllin/cya-desktop-pet/releases/latest ，在 Assets 中找到文件名以 cya-desktop-pet-community- 开头、以 -windows-x64.zip 结尾的附件并下载。
+请跳过 Source code (zip)、Source code (tar.gz) 和仓库首页的 Code → Download ZIP，这些都是项目源码。
+如果你无法替我下载文件，请把该附件的直接下载链接发给我。
+```
 
 ## 按你的习惯来
 
