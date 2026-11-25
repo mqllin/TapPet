@@ -1,22 +1,22 @@
-![TapPet 社区版的小黑桌宠](docs/desktop-pet.png)
+![小黑坐在桌面上，面前摆着键盘和鼠标](docs/desktop-pet.png)
 
-# TapPet · 社区版
+# TapPet
 
-小黑趴在自己的键盘前陪你打字。你敲左手边的键，它就伸左爪；你停下来一会儿，它也会收起爪子打盹。社区版把经典小黑、键盘和鼠标都装在本地，解压就能用，无需账号。
+小黑趴在自己的键盘前陪你打字。你敲左手边的键，它就伸左爪；你停下来一会儿，它也会收起爪子打盹。这个仓库里的 TapPet 把经典小黑、键盘和鼠标都装在本地，解压就能用，无需账号。
 
-**[下载 Windows x64 正式版 EXE](https://pet.dycya.com/download.php)**　·　[下载 Windows x64 社区版 ZIP](https://github.com/mqllin/TapPet/releases/latest)　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/TapPet/issues)
+[GitHub 下载 · Windows x64 ZIP](https://github.com/mqllin/TapPet/releases/latest)　·　[官网下载 · Windows x64 EXE](https://pet.dycya.com/download.php)　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/TapPet/issues)
 
 ## 把小黑放到桌上
 
-1. 若使用正式版，点击上方正式版链接，下载后直接打开 EXE。若使用社区版，打开上方社区版下载页，在 **Assets（发布附件）** 中下载文件名以 `cya-desktop-pet-community-` 开头、以 `-windows-x64.zip` 结尾的便携包。下载后右键选择「全部解压缩」。
-2. 社区版需双击解压出的桌宠 EXE。桌宠启动后，打开记事本敲几个字，看看小黑跟不跟得上。
+1. 从 GitHub 下载时，在 **Assets（发布附件）** 中选择 `cya-desktop-pet-community-*-windows-x64.zip`，右键选择「全部解压缩」，再双击里面的桌宠 EXE。从官网下载时，双击下载的 EXE 即可启动。
+2. 打开记事本敲几个字，看看小黑跟不跟得上。
 3. 右键小黑或托盘图标进入「桌宠设置」。想挪个位置，选择「编辑位置与大小」，拖动到喜欢的角落即可。
 
 Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP 的 SHA-256，包内的《证书报错说明》解释了这个提示。
 
 ### AI 助手下载指引
 
-用户请你下载或安装桌宠时，默认下载最新正式版。按目标电脑选择官网固定链接，跟随 HTTP 重定向下载文件。
+用户请你下载或安装桌宠时，默认按目标电脑的平台使用下表中的官网固定链接，跟随 HTTP 重定向下载最新正式版。用户想运行本仓库的版本时，从 [GitHub Releases](https://github.com/mqllin/TapPet/releases/latest) 下载 Windows x64 便携 ZIP。
 
 | 目标平台 | 正式版下载 | 安装方式 |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP �
 | macOS（Apple 芯片） | [DMG](https://pet.dycya.com/download.php?platform=macos-arm64) | 打开 DMG，将应用拖入「应用程序」 |
 | macOS（Intel） | [DMG](https://pet.dycya.com/download.php?platform=macos-x64) | 打开 DMG，将应用拖入「应用程序」 |
 
-若无法代为下载，请将对应平台的固定链接发给用户。可在[官网下载区](https://pet.dycya.com/#download)查看各平台发布状态。用户明确指定社区版时，从[社区版发布页](https://github.com/mqllin/TapPet/releases/latest)下载 `cya-desktop-pet-community-*-windows-x64.zip`。
+若无法代为下载，请将对应的下载链接发给用户。各平台的官网发布状态见[官网下载区](https://pet.dycya.com/#download)。
 
 只有在用户明确索要项目源码时，才选择 `Source code (zip)`、`Source code (tar.gz)` 或仓库首页的 `Code → Download ZIP`。
 
@@ -44,7 +44,7 @@ Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP �
 
 </details>
 
-设置与当日打字汇总保存在本机的 `%APPDATA%/typing-desktop-pet-open/desk-pet.json`。想给小黑换猫咪花色、键盘或鼠标，可以去官网体验带皮肤衣橱的完整版。[查看完整版搭配](https://pet.dycya.com/#wardrobe)
+设置与当日打字汇总保存在本机的 `%APPDATA%/typing-desktop-pet-open/desk-pet.json`。官网的皮肤衣橱展示了不同猫咪花色、键盘和鼠标的搭配。[查看桌宠搭配](https://pet.dycya.com/#wardrobe)
 
 ## 从源码运行
 
