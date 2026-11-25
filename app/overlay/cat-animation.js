@@ -1,5 +1,3 @@
-// Original drawing and animation: https://xiaozhilittleone.com/cat.js
-// Adapted for the desktop pet's procedural models and input-driven animation.
 window.createCat = function (host, options = {}) {
 const stageEl = host;
 let dead = false, raf = 0, followKeys = false, lastStrikeAt = -1e9, halfRate = false;

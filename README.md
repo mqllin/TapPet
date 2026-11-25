@@ -48,4 +48,4 @@ npm start
 
 本次发布的原创代码和随附原创美术素材使用 **PolyForm Noncommercial 1.0.0**。欢迎按许可学习、修改和非商业分享，并保留署名及许可说明。销售软件副本、将其打包进收费产品等商业用途需另行取得作者授权。[许可全文](LICENSE) · [署名声明](NOTICE.txt)
 
-小黑的原始造型和基础动画来自作者的 LittleOne（小只）项目。Three.js 与 GLTFLoader 保留各自的 MIT 许可。[LittleOne](https://xiaozhilittleone.com/) · [Three.js 许可证](app/vendor/THREE-LICENSE.txt)
+Three.js 与 GLTFLoader 保留各自的 MIT 许可。[Three.js 许可证](app/vendor/THREE-LICENSE.txt)
