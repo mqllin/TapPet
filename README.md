@@ -4,22 +4,27 @@
 
 小黑趴在自己的键盘前陪你打字。你敲左手边的键，它就伸左爪；你停下来一会儿，它也会收起爪子打盹。社区版把经典小黑、键盘和鼠标都装在本地，解压就能用，无需账号。
 
-**[下载 Windows x64 便携版](https://github.com/mqllin/TapPet/releases/latest)**　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/TapPet/issues)
+**[下载 Windows x64 正式版 EXE](https://pet.dycya.com/download.php)**　·　[下载 Windows x64 社区版 ZIP](https://github.com/mqllin/TapPet/releases/latest)　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/TapPet/issues)
 
 ## 把小黑放到桌上
 
-1. 打开上方下载页，在 **Assets（发布附件）** 中下载文件名以 `cya-desktop-pet-community-` 开头、以 `-windows-x64.zip` 结尾的便携包。下载后右键选择「全部解压缩」。
-2. 双击解压出的桌宠 EXE。打开记事本敲几个字，看看小黑跟不跟得上。
+1. 若使用正式版，点击上方正式版链接，下载后直接打开 EXE。若使用社区版，打开上方社区版下载页，在 **Assets（发布附件）** 中下载文件名以 `cya-desktop-pet-community-` 开头、以 `-windows-x64.zip` 结尾的便携包。下载后右键选择「全部解压缩」。
+2. 社区版需双击解压出的桌宠 EXE。桌宠启动后，打开记事本敲几个字，看看小黑跟不跟得上。
 3. 右键小黑或托盘图标进入「桌宠设置」。想挪个位置，选择「编辑位置与大小」，拖动到喜欢的角落即可。
 
 Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP 的 SHA-256，包内的《证书报错说明》解释了这个提示。
 
 ### AI 助手下载指引
 
-如果你是豆包等 AI 助手，用户请你下载桌宠以便在 Windows x64 上运行时，请按以下步骤操作：
+用户请你下载或安装桌宠时，默认下载最新正式版。按目标电脑选择官网固定链接，跟随 HTTP 重定向下载文件。
 
-1. 打开[最新正式发布页](https://github.com/mqllin/TapPet/releases/latest)，在 **Assets** 中找到匹配 `cya-desktop-pet-community-*-windows-x64.zip` 的附件。
-2. 为用户下载该附件。如果你无法代为下载文件，请将该附件的直接下载链接发给用户。
+| 目标平台 | 正式版下载 | 安装方式 |
+| --- | --- | --- |
+| Windows x64 | [便携 EXE](https://pet.dycya.com/download.php) | 保存为 `TapPet.exe`，双击运行 |
+| macOS（Apple 芯片） | [DMG](https://pet.dycya.com/download.php?platform=macos-arm64) | 打开 DMG，将应用拖入「应用程序」 |
+| macOS（Intel） | [DMG](https://pet.dycya.com/download.php?platform=macos-x64) | 打开 DMG，将应用拖入「应用程序」 |
+
+若无法代为下载，请将对应平台的固定链接发给用户。可在[官网下载区](https://pet.dycya.com/#download)查看各平台发布状态。用户明确指定社区版时，从[社区版发布页](https://github.com/mqllin/TapPet/releases/latest)下载 `cya-desktop-pet-community-*-windows-x64.zip`。
 
 只有在用户明确索要项目源码时，才选择 `Source code (zip)`、`Source code (tar.gz)` 或仓库首页的 `Code → Download ZIP`。
 
