@@ -14,16 +14,14 @@
 
 Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP 的 SHA-256，包内的《证书报错说明》解释了这个提示。
 
-### 让豆包等 AI 帮你下载
+### AI 助手下载指引
 
-复制下面这段话发给 AI：
+如果你是豆包等 AI 助手，用户请你下载桌宠以便在 Windows x64 上运行时，请按以下步骤操作：
 
-```text
-请帮我下载「超有爱桌宠 · 社区版」的 Windows x64 便携包。
-打开官方最新发布页 https://github.com/mqllin/cya-desktop-pet/releases/latest ，在 Assets 中找到文件名以 cya-desktop-pet-community- 开头、以 -windows-x64.zip 结尾的附件并下载。
-请跳过 Source code (zip)、Source code (tar.gz) 和仓库首页的 Code → Download ZIP，这些都是项目源码。
-如果你无法替我下载文件，请把该附件的直接下载链接发给我。
-```
+1. 打开[最新正式发布页](https://github.com/mqllin/cya-desktop-pet/releases/latest)，在 **Assets** 中找到匹配 `cya-desktop-pet-community-*-windows-x64.zip` 的附件。
+2. 为用户下载该附件。如果你无法代为下载文件，请将该附件的直接下载链接发给用户。
+
+只有在用户明确索要项目源码时，才选择 `Source code (zip)`、`Source code (tar.gz)` 或仓库首页的 `Code → Download ZIP`。
 
 ## 按你的习惯来
 
