@@ -9,8 +9,14 @@
   <script defer src="settings.js"></script>
 </head>
 <body>
-<main>
-  <header><div><p class="edition">超有爱桌宠 · 社区版</p><h1>桌宠设置</h1></div><span id="input-status" role="status"></span></header>
+<div class="settings-shell">
+  <header>
+    <div class="brand"><div><p class="edition">超有爱桌宠 · 社区版</p><h1>桌宠设置</h1></div>
+      <button class="community" type="button" id="copy-qq-group" title="点击复制 QQ 群号">QQ 群 <strong>302953758</strong></button>
+    </div>
+    <span id="input-status" role="status"></span>
+  </header>
+  <main id="settings-content">
   <aside class="showcase" aria-labelledby="full-title">
     <h2 id="full-title">完整版的小猫衣橱</h2>
     <p>在完整版里，可以分别挑选猫咪、键盘和鼠标，把喜欢的组合存成主题。</p>
@@ -24,7 +30,12 @@
       <a id="website" href="https://pet.dycya.com/" title="在默认浏览器中打开完整版官网">探索完整版 <span>pet.dycya.com ↗</span></a>
     </div>
   </aside>
-  <p id="message" role="alert" hidden></p>
+  <div class="notice-layer">
+    <div class="notice" id="notice" hidden>
+      <span id="notice-text" role="status"></span>
+      <button type="button" id="close-notice" aria-label="关闭通知">×</button>
+    </div>
+  </div>
   <form id="preferences">
     <section><h2>桌面显示</h2>
       <label>显示桌宠<input name="visible" type="checkbox" role="switch"></label>
@@ -44,9 +55,6 @@
       <label>显示今日累计字数<input name="showTypingTotal" type="checkbox" role="switch"></label>
     </section>
   </form>
-  <footer class="community">
-    <button type="button" id="copy-qq-group" title="点击复制群号">QQ 交流群 <strong>302953758</strong> · 复制群号</button>
-    <span id="qq-copy-status" role="status"></span>
-  </footer>
 </main>
+</div>
 </body></html>

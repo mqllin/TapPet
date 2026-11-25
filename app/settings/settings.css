@@ -1,10 +1,16 @@
 * { box-sizing: border-box; }
 :root { color-scheme: light; font: 14px/1.5 "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif; color: #262c27; background: #f8f7f3; }
 body { margin: 0; }
-.community { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.community button { cursor: pointer; }
-.community [role="status"] { font-size: 13px; }
-main { max-width: 760px; margin: auto; padding: 25px 32px 32px; }
+.community { cursor: pointer; white-space: nowrap; }
+.notice-layer { position: fixed; inset: 0; z-index: 20; pointer-events: none; }
+.notice { position: absolute; right: 16px; bottom: 16px; max-width: min(420px, calc(100% - 32px)); display: flex; align-items: center; gap: 12px; padding: 8px 10px 8px 14px; border-radius: 8px; background: #e2efe1; color: #22533a; box-shadow: 0 3px 16px #20382d28; font-size: 13px; overflow-wrap: anywhere; pointer-events: auto; }
+.notice[hidden] { display: none; }
+.notice.error { background: #f9e9e1; color: #88352c; }
+#close-notice { flex: none; border: 0; background: transparent; color: inherit; font-size: 20px; line-height: 1; padding: 4px 6px; cursor: pointer; }
+html, body { height: 100%; overflow: hidden; }
+.settings-shell { max-width: 760px; height: 100%; margin: auto; padding: 25px 32px 0; display: flex; flex-direction: column; }
+.settings-shell > header { flex: none; }
+#settings-content { min-height: 0; overflow-y: auto; flex: 1; padding: 2px 4px 32px; scrollbar-gutter: stable; }
 header, label, .size { display: flex; justify-content: space-between; align-items: center; gap: 14px; }
 header { margin-bottom: 18px; }
 .edition { margin: 0 0 3px; color: #5d685f; font-size: 12px; }
@@ -41,5 +47,5 @@ input[type=number] { width: 82px; }
 .size { gap: 10px; }
 output { color: #536450; font-variant-numeric: tabular-nums; }
 :focus-visible { outline: 2px solid #386a41; outline-offset: 3px; }
-#message { color: #8a321e; }
-@media (max-width: 530px) { main { padding: 18px; } .showcase { padding: 13px; } }
+.brand { display: flex; align-items: center; gap: 12px; }
+@media (max-width: 530px) { .settings-shell { padding: 18px 18px 0; } .showcase { padding: 13px; } }
