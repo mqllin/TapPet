@@ -1,10 +1,10 @@
-![超有爱桌宠社区版。你敲键盘，小黑也敲。](docs/readme-cover.png)
+![TapPet 社区版的小黑桌宠](docs/desktop-pet.png)
 
-# 超有爱桌宠 · 社区版
+# TapPet · 社区版
 
 小黑趴在自己的键盘前陪你打字。你敲左手边的键，它就伸左爪；你停下来一会儿，它也会收起爪子打盹。社区版把经典小黑、键盘和鼠标都装在本地，解压就能用，无需账号。
 
-**[下载 Windows x64 便携版](https://github.com/mqllin/cya-desktop-pet/releases/latest)**　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/cya-desktop-pet/issues)
+**[下载 Windows x64 便携版](https://github.com/mqllin/TapPet/releases/latest)**　·　[官网试玩](https://pet.dycya.com/#demo)　·　[反馈问题](https://github.com/mqllin/TapPet/issues)
 
 ## 把小黑放到桌上
 
@@ -18,7 +18,7 @@ Windows 首次运行时可能提示「发布者未知」。下载页提供 ZIP �
 
 如果你是豆包等 AI 助手，用户请你下载桌宠以便在 Windows x64 上运行时，请按以下步骤操作：
 
-1. 打开[最新正式发布页](https://github.com/mqllin/cya-desktop-pet/releases/latest)，在 **Assets** 中找到匹配 `cya-desktop-pet-community-*-windows-x64.zip` 的附件。
+1. 打开[最新正式发布页](https://github.com/mqllin/TapPet/releases/latest)，在 **Assets** 中找到匹配 `cya-desktop-pet-community-*-windows-x64.zip` 的附件。
 2. 为用户下载该附件。如果你无法代为下载文件，请将该附件的直接下载链接发给用户。
 
 只有在用户明确索要项目源码时，才选择 `Source code (zip)`、`Source code (tar.gz)` 或仓库首页的 `Code → Download ZIP`。

@@ -12,7 +12,7 @@ const { DesktopInput } = require('./platform/input.cjs');
 const { OverlayInteraction, overlayBounds } = require('./platform/overlay-interaction.cjs');
 
 const appId = 'local.typingdesktop.pet.open';
-const appTitle = '超有爱桌宠社区版';
+const appTitle = 'TapPet 社区版';
 // Pin the profile before setting the localized window title.
 if (!app.commandLine.hasSwitch('user-data-dir')) {
   app.setPath('userData', path.join(app.getPath('appData'), 'typing-desktop-pet-open'));
@@ -288,7 +288,7 @@ function buildPetMenu() {
     {label: '键鼠联动', type: 'checkbox', checked: inputEnabled, click: () => mutate(() => store.patchSettings({inputEnabled: !store.state.settings.inputEnabled}))},
     {label: '隐私模式', type: 'checkbox', checked: privacyMode, click: () => mutate(() => store.patchSettings({privacyMode: !store.state.settings.privacyMode}))},
     {type: 'separator'},
-    {label: '退出' + appTitle, click: () => app.quit()},
+    {label: '退出 ' + appTitle, click: () => app.quit()},
   ]);
 }
 

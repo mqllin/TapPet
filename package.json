@@ -20,7 +20,7 @@
   },
   "build": {
     "appId": "local.typingdesktop.pet.open",
-    "productName": "超有爱桌宠社区版",
+    "productName": "TapPet 社区版",
     "directories": {
       "output": "dist",
       "buildResources": "build"
@@ -40,7 +40,7 @@
       "icon": "build/icon.ico",
       "signAndEditExecutable": true,
       "signtoolOptions": { "signingHashAlgorithms": ["sha256"] },
-      "artifactName": "超有爱桌宠-社区版-${version}-${arch}.${ext}"
+      "artifactName": "TapPet-社区版-${version}-${arch}.${ext}"
     }
   },
   "engines": {
