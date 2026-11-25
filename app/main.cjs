@@ -1,7 +1,7 @@
 'use strict';
 
 const {
-  app, BrowserWindow, Tray, Menu, nativeImage, ipcMain,
+  app, BrowserWindow, Tray, Menu, nativeImage, ipcMain, clipboard,
   screen, shell, systemPreferences, powerMonitor,
 } = require('electron');
 const path = require('node:path');
@@ -330,6 +330,7 @@ function registerIpc() {
   };
   const settingsHandler = (name, handler) => ipcMain.handle(name, guard(() => settings, handler));
   settingsHandler('settings:get', settingsState);
+  settingsHandler('settings:copy-qq-group', () => clipboard.writeText('302953758'));
   settingsHandler('settings:website', () => shell.openExternal('https://pet.dycya.com/'));
   settingsHandler('settings:update', patch => mutate(() => store.patchSettings(patch)));
   settingsHandler('settings:permission', () => {

@@ -10,6 +10,7 @@ function subscribe(channel, listener) {
 
 contextBridge.exposeInMainWorld('desktopPet', {
   getState: () => ipcRenderer.invoke('settings:get'),
+  copyQqGroup: () => ipcRenderer.invoke('settings:copy-qq-group'),
   openWebsite: () => ipcRenderer.invoke('settings:website'),
   updateSettings: patch => ipcRenderer.invoke('settings:update', patch),
   requestPermission: () => ipcRenderer.invoke('settings:permission'),

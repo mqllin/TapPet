@@ -40,6 +40,16 @@ form.addEventListener('change', async ({target}) => {
     report(error.message);
   }
 });
+document.querySelector('#copy-qq-group').addEventListener('click', async ({currentTarget}) => {
+  const number = currentTarget.querySelector('strong').textContent;
+  const status = document.querySelector('#qq-copy-status');
+  try {
+    await api.copyQqGroup();
+    status.textContent = '群号已复制';
+  } catch {
+    status.textContent = '复制失败，请在 QQ 中输入 ' + number;
+  }
+});
 document.querySelector('#website').onclick = event => {
   event.preventDefault();
   api.openWebsite().catch(error => report(error.message));

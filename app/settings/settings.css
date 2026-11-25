@@ -1,6 +1,9 @@
 * { box-sizing: border-box; }
 :root { color-scheme: light; font: 14px/1.5 "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif; color: #262c27; background: #f8f7f3; }
 body { margin: 0; }
+.community { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.community button { cursor: pointer; }
+.community [role="status"] { font-size: 13px; }
 main { max-width: 760px; margin: auto; padding: 25px 32px 32px; }
 header, label, .size { display: flex; justify-content: space-between; align-items: center; gap: 14px; }
 header { margin-bottom: 18px; }
